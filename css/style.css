@@ -216,7 +216,7 @@ li {
 .problem-wrap__con__list__item {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 16px;
 }
 .problem-wrap__con__list__item span {
   border: #4b4737 solid 2px;
@@ -229,9 +229,9 @@ li {
 .problem-wrap__con__list__item span::before {
   content: "✔";
   position: absolute;
-  top: -22px;
+  top: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   font-size: clamp(1.5rem, 1.357rem + 0.71vw, 2rem);
   font-weight: bold;
 }
@@ -284,7 +284,7 @@ li {
 }
 .__cta-wrap__con {
   display: flex;
-  gap: 45px;
+  gap: 40px;
   align-items: center;
 }
 .__cta-wrap__con__btn a {
@@ -295,6 +295,7 @@ li {
   background: linear-gradient(180deg, #99d1c9 0%, #4e6b67 100%);
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   display: flex;
+  max-width: 241px;
   width: 100%;
   align-items: center;
   padding: 12px 18px;
@@ -306,6 +307,7 @@ li {
   background: linear-gradient(180deg, rgba(75, 71, 55, 0.6) 0%, #4b4737 100%);
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   display: flex;
+  max-width: 190px;
   width: 100%;
   align-items: center;
   padding: 12px 18px;
@@ -510,6 +512,7 @@ li {
 
 .faq-wrap__con__list__item__q {
   display: flex;
+  height: 69px;
   align-items: center;
   font-size: clamp(0.85rem, 0.795rem + 0.27vw, 1rem);
   background-color: #d1c7a3;
@@ -767,16 +770,28 @@ input[type="date"] {
 }
 
 .problem-wrap__con__list__item span::before {
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: clamp(1.5rem, 0.506rem + 4.97vw, 2rem);
 }
 .problem-wrap__con__list__item p {
-  font-size: clamp(1rem, 0.503rem + 2.48vw, 1.25rem);
+  font-size: clamp(0.9rem, 0.741rem + 0.8vw, 1.25rem);
 }
 
 .__cta-wrap {
   max-width: 576px;
   width: 100%;
   padding: 3% 2%;
+}
+.__cta-wrap__con__btn__web {
+  padding: 3px;
+}
+.__cta-wrap__con__btn__tel {
+  padding: 3px;
+}
+.__cta-wrap__con__btn a i {
+  font-size: clamp(1.5rem, 0.5rem + 5vw, 2rem);
+  margin-right: 10px;
 }
 .about-wrap__con {
   flex-wrap: wrap;
@@ -822,7 +837,9 @@ input[type="date"] {
   align-items: center;
   font-size: 1rem;
   }
-
+.reason-wrap__con__block__ttl span {
+  margin-right: 50px;
+}
 .faq-wrap__con__list {
   width: 100%;
 }
@@ -876,23 +893,14 @@ input[type="date"] {
   width: 20px;
   height: 20px;
 }
-.__cta-wrap__con {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-.__cta-wrap__con__btn__web {
-  padding: 3px;
-}
-.__cta-wrap__con__btn__tel {
-  padding: 3px;
-}
-.__cta-wrap__con__btn a i {
-  font-size: clamp(1.5rem, 0.5rem + 5vw, 2rem);
-  margin-right: 10px;
+.problem-wrap__con__list__item span::before {
+  font-size: 1.5rem;
 }
 .reason-wrap__con__block__ttl {
   font-size: clamp(1rem, 5vw, 1.5rem);
+}
+.reason-wrap__con__block__ttl span {
+  margin-right: 30px;
 }
 .faq-wrap__con__list__item__q::after,
 .faq-wrap__con__list__item__q::before {
